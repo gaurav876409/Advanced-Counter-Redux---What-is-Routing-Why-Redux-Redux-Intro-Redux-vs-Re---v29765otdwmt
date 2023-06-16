@@ -35,7 +35,7 @@ const App = () => {
         <>
           <button onClick={handleLogout}>Logout</button>
           <button onClick={handleIncrement}>+</button>
-          <span data-testid="counter">{counter}</span>
+          <span data-testid='counter'>{counter}</span>
           <button onClick={handleDecrement}>-</button>
           <input
             type="number"
