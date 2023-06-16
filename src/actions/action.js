@@ -9,7 +9,8 @@ export const increment = () => {
       type: 'DECREMENT',
     };
   };
-export const signIn = () => {
+  
+  export const signIn = () => {
     return {
       type: 'SIGN_IN',
     };

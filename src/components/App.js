@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { increment, decrement, signIn, signOut, incrementByAmount } from '../actions/action';
 
+
 const App = () => {
   const [amount, setAmount] = useState(2);
   const counter = useSelector((state) => state.counter);
@@ -51,5 +52,3 @@ const App = () => {
 };
 
 export default App;
-
-
