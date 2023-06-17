@@ -6,7 +6,7 @@ import { increment, decrement, signIn, signOut, incrementByAmount } from '../act
 const App = () => {
   const [amount, setAmount] = useState(2);
   const counter = useSelector((state) => state.counter);
-  const isLogged = useSelector((state) => state.isLogged);
+  const islogged = useSelector((state) => state.islogged);
   const dispatch = useDispatch();
 
   const handleIncrement = () => {
@@ -31,11 +31,11 @@ const App = () => {
 
   return (
     <div>
-      {isLogged ? (
+      {islogged ? (
         <>
           <button onClick={handleLogout}>Logout</button>
           <button onClick={handleIncrement}>+</button>
-          <span data-testid='counter'>{counter}</span>
+          <span data-testid="counter">{counter}</span>
           <button onClick={handleDecrement}>-</button>
           <input
             type="number"

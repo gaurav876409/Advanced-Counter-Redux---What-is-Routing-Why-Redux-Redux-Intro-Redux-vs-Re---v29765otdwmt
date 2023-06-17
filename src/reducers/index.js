@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 
 const initialState = {
   counter: 0,
-  isLogged: false,
+  islogged: false,
 };
 
 const counterReducer = (state = initialState.counter, action) => {
@@ -18,7 +18,7 @@ const counterReducer = (state = initialState.counter, action) => {
   }
 };
 
-const isLoggedReducer = (state = initialState.isLogged, action) => {
+const isLoggedReducer = (state = initialState.islogged, action) => {
   switch (action.type) {
     case 'SIGN_IN':
       return true;
@@ -31,7 +31,7 @@ const isLoggedReducer = (state = initialState.isLogged, action) => {
 
 const rootReducer = combineReducers({
   counter: counterReducer,
-  isLogged: isLoggedReducer,
+  islogged: isLoggedReducer,
 });
 
 export default rootReducer;
